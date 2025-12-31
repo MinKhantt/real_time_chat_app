@@ -6,23 +6,23 @@ class Settings(BaseSettings):
     DB_USER: str
     DB_PASSWORD: str
     DB_NAME: str
+    DB_PORT: int
 
     @property
     def DATABASE_URL(self) -> str:
-        return f"postgresql+asyncpg://{self.DB_USER}:{self.DB_PASSWORD}@db:5432/{self.DB_NAME}"
+        return f"postgresql+asyncpg://{self.DB_USER}:{self.DB_PASSWORD}@db:{self.DB_PORT}/{self.DB_NAME}"
 
     # API settings
-    # Add default values to formerly required fields
-    API_PREFIX: str = "/api" 
-    API_V1: str = "/v1"
-    DEBUG: bool = False
-    ALGORITHM: str = "HS256"
-    SECRET_KEY: str = "your-insecure-default-secret-key-change-this-in-env"
-    ACCESS_TOKEN_EXPIRE_MINUTES: int = 60
+    API_PREFIX: str 
+    API_V1: str 
+    DEBUG: bool 
+    ALGORITHM: str 
+    SECRET_KEY: str 
+    ACCESS_TOKEN_EXPIRE_MINUTES: int 
 
     # Redis settings
-    REDIS_HOST: str = "redis"
-    REDIS_PORT: int = 6379
+    REDIS_HOST: str 
+    REDIS_PORT: int 
 
     model_config = SettingsConfigDict(
         env_file=".env",
