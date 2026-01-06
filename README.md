@@ -34,4 +34,5 @@ The project follows a clean, modular architecture:
 
 ## Status
 
-This project is under active development and built mainly for learning, practice and backend portfolio use.
+This project is intended for learning and development purposes. 
+It is a work in progress and is being developed while I am learning backend development.
