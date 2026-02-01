@@ -36,3 +36,15 @@ The project follows a clean, modular architecture:
 
 This project is intended for learning and development purposes. 
 It is a work in progress and is being developed while I am learning backend development.
+
+Right now implemented secure login, registration and access control.
+Real-time chat functionality is in progress.
+
+## Getting Started with Docker
+### Clone the repository
+git clone <https://github.com/MinKhantt/real_time_chat_app.git>
+cd real_time_chat_app
+create .env file and run - cp .env.example .env
+then run - docker-compose up -d
+and you can test in http://localhost:8000/docs#/
+
