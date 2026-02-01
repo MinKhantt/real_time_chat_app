@@ -42,9 +42,9 @@ Real-time chat functionality is in progress.
 
 ## Getting Started with Docker
 ### Clone the repository
-git clone <https://github.com/MinKhantt/real_time_chat_app.git>
-cd real_time_chat_app
-create .env file and run - cp .env.example .env
-then run - docker-compose up -d
-and you can test in http://localhost:8000/docs#/
+- git clone <https://github.com/MinKhantt/real_time_chat_app.git>
+- cd real_time_chat_app
+- create .env file and run - cp .env.example .env
+- then run - docker-compose up -d
+- and you can test in http://localhost:8000/docs#/
 
